@@ -1,5 +1,5 @@
 .app-wrapper{
-margin: 0 auto 0 auto;
+margin: auto;
 width: auto;
 display: grid;
 
@@ -12,26 +12,11 @@ grid-template-columns: 2fr 10fr;
 /* grid-gap: 10px; */
 }
 
-.header{
-  grid-area: header;
-  background-color: #fffd92;
-}
-.header img{
-  width: 30px;
-}
 
-.nav{
-  grid-area: nav;
-  background-color: #dafff6;
-}
 
-.content{
-  grid-area: content;
-  background-color: #ffffff;
-}
-.content img{
-width: 100%;
-}
+
+
+
 .avatar{
   width: 100px;
 }

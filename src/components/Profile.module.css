@@ -13,6 +13,11 @@
   margin: 1px 1px 1px 10px;
 }
 
+.item.heading{
+  font-size: 20px;
+  color: #000000;
+}
+
 .avatar {
   width: 80px;
   margin: 10px 1px 1px 10px;

@@ -7,7 +7,7 @@ const Profile = () => {
   <div className = {p.avatar}>
     <img src='https://www.pngmart.com/files/21/Account-User-PNG-Clipart.png'/>
   </div>
-  <div className = {p.item}>
+  <div className = {`${p.item} ${p.heading}`}>
     Discription
   </div>
   <div className = {p.item}>

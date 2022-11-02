@@ -12,11 +12,11 @@ grid-template-columns: 2fr 10fr;
 /* grid-gap: 10px; */
 }
 
-
-
-
-
-
 .avatar{
   width: 100px;
+}
+
+.app-wrapper-content {
+  grid-area: content;
+  background-color: #ffffff;
 }

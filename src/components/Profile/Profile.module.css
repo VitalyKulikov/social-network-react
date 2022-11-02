@@ -3,28 +3,11 @@
   background-color: #ffffff;
 }
 
-.content img {
+.content .main_img {
   width: 100%;
 }
 
-.item {
-  color: #880854;
-  font-size: 17px;
-  margin: 1px 1px 1px 10px;
-}
-
-.item.heading{
-  font-size: 20px;
-  color: #000000;
-}
-
-.avatar {
+.avatar img {
   width: 80px;
   margin: 10px 1px 1px 10px;
-}
-
-.post {
-  color: #000000;
-  font-size: 17px;
-  margin: 1px 1px 1px 15px;
 }

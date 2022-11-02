@@ -1,24 +1,19 @@
 import React from 'react';
+import MyPosts from '../MyPosts/MyPosts';
 import p from './Profile.module.css';
 
 const Profile = () => {
-  return <div className={p.content}>
+  return <div>
+    <div className={p.main_img}>
     <img src='https://adsmediabrokers.com/wp-content/uploads/2019/05/it-services.jpg'/>
+    </div>
   <div className = {p.avatar}>
     <img src='https://www.pngmart.com/files/21/Account-User-PNG-Clipart.png'/>
   </div>
   <div className = {`${p.item} ${p.heading}`}>
     Discription
   </div>
-  <div className = {p.item}>
-    New post
-  </div>
-  <div className = {p.post}>
-    Post 1
-  </div>
-  <div className = {p.post}>
-    Post 2
-  </div>
+  <MyPosts />
 </div>
 }
 

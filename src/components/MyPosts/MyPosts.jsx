@@ -5,12 +5,9 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-let postsData = [
-  {id: 1, message: `How are you?`, like: 15,},
-  {id: 2, message: `It's my first post!`, like: 20,}
-]
 
-let postElements = postsData.map(post => <Post message={post.message} likesCount={post.like}/>)
+
+  let postElements = props.postsData.map(post => <Post message={post.message} likesCount={post.like} />)
 
   return (
     <div className={my_post.myPost}>
@@ -24,8 +21,8 @@ let postElements = postsData.map(post => <Post message={post.message} likesCount
           <button>Return</button>
         </div>
       </div>
-      <div className={my_post.posts}>
-        { postElements }
+      <div className={my_post.post}>
+        {postElements}
       </div>
     </div>
   )

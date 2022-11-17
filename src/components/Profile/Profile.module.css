@@ -3,13 +3,9 @@
   background-color: #ffffff;
 }
 
-.content .main_img {
+.content .main_img{
   width: 100%;
-}
-
-.avatar img {
-  width: 80px;
-  margin: 10px 1px 1px 10px;
+  height: 40px;
 }
 
 .heading{

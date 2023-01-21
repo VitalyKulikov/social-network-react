@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components//Navbar/Navbar';
@@ -12,16 +11,18 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 const App = (props) => {
   return (
     <BrowserRouter>
-    
+
     <div className = 'app-wrapper'>
       <Header />
       <Navbar />
       <div className='app-wrapper-content'>
       <Routes>
         <Route path= '/dialogs*' element = {<Dialogs state={props.state.messagesPage} />} />
-        <Route path= '/profile' element = {<Profile state={props.state.profilePage} />} />
+        <Route path= '/profile' element = {<Profile 
+        profilePage={props.state.profilePage} 
+        dispatch={props.dispatch}  />} />
         <Route path= '/news' element = {<News />} />
-        </Routes>
+      </Routes>
       </div>
     </div>
     </BrowserRouter>

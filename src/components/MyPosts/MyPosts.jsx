@@ -2,6 +2,12 @@ import React from 'react';
 import my_post from './MyPosts.module.css';
 import Post from './Post/Post';
 
+let addPostActionCreator = () => {
+return {
+  tupe: 'ADD-POST'
+}
+
+}
 
 const MyPosts = (props) => {
 
@@ -11,8 +17,8 @@ const MyPosts = (props) => {
 let newPostElement = React.createRef();
 
 let addPost = () => {
-  props.dispatch({type: 'ADD-POST'});
-}
+  props.dispatch({addPostActionCreator()});
+} 
 
 let onPostChange = () => {
   let text = newPostElement.current.value;

@@ -1,8 +1,5 @@
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE_NEW_MESSAGE_TEXT'
-const SEND_MESSAGE = 'SEND_MESSAGE'
-
+import messagesPageReduser from "./messages-page-reduser";
+import profilePageReduser from "./profile-page-reduser";
 
 let store = {
     _state: {
@@ -42,30 +39,11 @@ let store = {
         this.callSubscriber = observer;
     },
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
-            let newPost = { id: 5, message: this._state.profilePage.newPostText,like: 0 };
-            this._state.profilePage.postsData.push(newPost);
-            this._state.profilePage.newPostText = '';
-            this.callSubscriber(this._state);
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
-            this._state.profilePage.newPostText = action.newText;
-            this.callSubscriber(this._state);
-        } else if (action.type === 'UPDATE_NEW_MESSAGE_TEXT') {
-            this._state.messagesPage.newMessageText = action.body;
-            this.callSubscriber(this._state);
-        } else if (action.type === 'SEND_MESSAGE') {
-            let body = this._state.messagesPage.newMessageText;
-            this._state.messagesPage.newMessageText = '';
-            this._state.messagesPage.messagesData.push({ id: '1', message: body });
-            this.callSubscriber(this._state);
-      }  
+
+        this._state.profilePage = profilePageReduser(this._state.profilePage, action );
+        this._state.messagesPage =  messagesPageReduser(this._state.messagesPage, action)
+        this.callSubscriber(this._state); 
     }, 
 };
-  
-export const addPostActionCreator = () => ({type: ADD_POST });
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});
-
-export const sendMessageCreator = () => ({type: SEND_MESSAGE});
-export const updateNewMessageTextCreator = (body) => ({type: UPDATE_NEW_MESSAGE_TEXT, body: body }); 
 
 export default store;

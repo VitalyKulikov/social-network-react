@@ -1,40 +1,44 @@
 import React from 'react';
 import dialogs from './Dialogs.module.css';
 import DialogItem from './DialogsItem/DialogItem';
-import Message from './Message/Message'
+import Message from './Message/Message';
+import {updateNewMessageTextCreator, sendMessageCreator} from '../../redux/state';
 
-const Dialogs = (props) => {
+const Dialogs = (props) => { 
 
-    let dialogsElements = props.state.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
-    let messagesElements = props.state.messagesData.map(message => <Message message={message.message} />)
+    let dialogsElements = props.messagesPage.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
+    let messagesElements = props.messagesPage.messagesData.map(message => <Message message={message.message} />);
+    let newMessageText = props.messagesPage.newMessageText;
 
-    let newMessageElement = React.createRef();
+let onNewMessageChange = (event) => { 
+    let body = event.target.value;   
+    props.dispatch(updateNewMessageTextCreator(body));
+};
 
-    let addMassege = () => {
-        let textMessage = newMessageElement.current.value;
-        alert (textMessage);
-    }
+let onSendMessageClick = () => {
+    props.dispatch(sendMessageCreator());
+};
 
     return (
-    
-
         <div className={dialogs.dialogs}>
             <div className={dialogs.dialogsItems}>
                 {dialogsElements}
             </div>
 
             <div className={dialogs.messages}>
-                {messagesElements}
+               <div> {messagesElements}  </div> 
             <div>
-                <textarea ref={newMessageElement}></textarea>
+                 <textarea onChange={onNewMessageChange} 
+                 value={newMessageText} >
+                 </textarea>
             </div>
             <div>
-                <button onClick={addMassege}>Add massage</button>
+                <button onClick={onSendMessageClick} >Send massage</button>
             </div>
             </div>
             
         </div>
     )
-}
+};
 
 export default Dialogs;

@@ -1,7 +1,15 @@
 const ADD_POST = 'ADD_POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
 
-const profilePageReduser =  (state, action) => {
+let initialState = {
+    postsData: [
+        { id: 1, message: `How are you?`, like: 15, },
+        { id: 2, message: `It's my first post!`, like: 20, }
+    ],
+    newPostText:'',
+}
+
+const profilePageReducer =  (state = initialState, action) => {
 
 switch (action.type) {
     case ADD_POST:
@@ -20,4 +28,4 @@ switch (action.type) {
 export const addPostActionCreator = () => ({type: ADD_POST });
 export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
-export default profilePageReduser; 
+export default profilePageReducer; 

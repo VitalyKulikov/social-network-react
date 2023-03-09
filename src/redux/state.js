@@ -1,5 +1,5 @@
-import messagesPageReduser from "./messages-page-reduser";
-import profilePageReduser from "./profile-page-reduser";
+import messagesPageReducer from "./messages-page-reducer";
+import profilePageReducer from "./profile-page-reducer";
 
 let store = {
     _state: {
@@ -40,8 +40,8 @@ let store = {
     },
     dispatch(action) {
 
-        this._state.profilePage = profilePageReduser(this._state.profilePage, action );
-        this._state.messagesPage =  messagesPageReduser(this._state.messagesPage, action)
+        this._state.profilePage = profilePageReducer(this._state.profilePage, action );
+        this._state.messagesPage =  messagesPageReducer(this._state.messagesPage, action)
         this.callSubscriber(this._state); 
     }, 
 };

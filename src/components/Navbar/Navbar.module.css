@@ -1,20 +1,26 @@
 .nav {
   grid-area: nav;
-  background-color: #dafff6;
+  background-color: #fafafa;
 }
 
 .item {
   color: #006b6c;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-shadow: 1px 1px 1px #ffffff;
-  margin: 1px 10px; 
+  margin: 5px 10px; 
+  padding: auto;
   text-decoration: none;
+  
 }
 
 .active {
   color: #c31952;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-shadow: 1px 1px 1px #ffffff;
   text-decoration: none;
   margin: 1px 10px; 
+  padding: auto;
+
 }

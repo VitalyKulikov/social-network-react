@@ -1,16 +1,25 @@
 .profileInfo {
+  display: grid;
+  grid-auto-columns: 1fr 5fr;
+  margin-top: 5px;
   box-shadow: 0 0 1px 0;
-  border-radius: 5px 0 0 5px;
+  border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(to right, #c5f4d5 1%, transparent 1%);
+
 }
 
 .avatar img {
-  background-color: #cfaa8f;
-  width: 80px;
-  margin: 10px 1px 1px 10px;
+  background-color: #dafff6;
+  width: 120px;
+  margin: 5px 10px 5px 20px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 #adb2b0;
+  box-shadow: 0 0 3px 0 #adb2b0;
 }
 
 .heading{
-  padding: 10px;
+  padding: 10px 5px 5px 20px;
+  font-size: 20px;
+  font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style:unset;
 }

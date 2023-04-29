@@ -1,15 +1,16 @@
 import React from 'react';
 import p from './ProfileInfo.module.css';
+import avatarPhoto from '../../../assets/image/avatarPhoto.png'
 
 const ProfileInfo = (props) => {
 
   return (
     <div className={p.profileInfo}>
       <div className={p.avatar}>
-        <img src='https://www.pngmart.com/files/21/Account-User-PNG-Clipart.png' />
+        <img src={avatarPhoto} />
       </div>
       <div className={`${p.item} ${p.heading}`}>
-        Discription
+        Vitaliy Kulikov
       </div>
     </div>
   )

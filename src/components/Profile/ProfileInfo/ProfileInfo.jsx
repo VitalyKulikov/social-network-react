@@ -1,17 +1,19 @@
 import React from 'react';
 import p from './ProfileInfo.module.css';
-import avatarPhoto from '../../../assets/image/avatarPhoto.png'
+import Preloader from "../../common/preloader/Preloader";
+
 
 const ProfileInfo = (props) => {
 
+    if(!props.profile) { return < Preloader /> }
+
   return (
-    <div className={p.profileInfo}>
+    <div className={p.ProfileInfo}>
       <div className={p.avatar}>
-        <img src={avatarPhoto} />
+       <img src={props.profile.photos.small}/>
       </div>
-      <div className={`${p.item} ${p.heading}`}>
-        Vitaliy Kulikov
-      </div>
+        <div className={p.name}> {props.profile.fullName} </div>
+        <div className={p.about}> {props.profile.aboutMe} </div>
     </div>
   )
 }

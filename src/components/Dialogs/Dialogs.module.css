@@ -16,9 +16,11 @@
     text-decoration: none;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 .active{
     color: #c31952;
-    font-size: auto;
+    /*noinspection CssInvalidPropertyValue*/
+    font-size: medium;
     text-shadow: 1px 1px 1px #ffffff;
     text-decoration: none;
 }

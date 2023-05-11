@@ -1,12 +1,26 @@
 import React from 'react';
-import h from './Header.module.css';
+import {connect} from "react-redux";
+import {getAuthUserData} from "../../redux/auth-reducer";
+import Header from "./Header";
 
-const Header = () => {
-  return (
-    <div className={h.header}>
-      <h1>Social Network</h1>
-    </div>
-  )
+
+class HeaderContainer extends React.Component {
+
+    componentDidMount() {
+        this.props.getAuthUserData();
+    }
+
+    render() {
+    return <Header {...this.props} login={this.props.login}/> }
 }
 
-export default Header;
+let mapStateToProps = (state) => {
+    return {
+    email: state.auth.email,
+    login: state.auth.login,
+    id: state.auth.id,
+    isAuth: state.auth.isAuth,
+    }
+}
+
+export default connect (mapStateToProps, {getAuthUserData})(HeaderContainer);

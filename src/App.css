@@ -6,7 +6,6 @@ display: grid;
 grid-template-areas:
 "header header"
 "nav content";
-
 grid-template-rows: 60px 1fr;
 grid-template-columns: 2fr 10fr;
 /* grid-gap: 10px; */
@@ -19,4 +18,7 @@ grid-template-columns: 2fr 10fr;
 .app-wrapper-content {
   grid-area: content;
   background-color: #ffffff;
+}
+.app-wrapper header{
+  grid-template-rows: 1fr;
 }

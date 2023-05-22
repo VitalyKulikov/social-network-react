@@ -23,12 +23,13 @@
 }
 
 .name{
+  position: unset;
   margin-left: 240px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .about{
-  margin-left: 240px;
+  *margin-left: 240px;
   font-size: 13px;
 }

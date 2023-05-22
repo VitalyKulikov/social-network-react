@@ -2,6 +2,9 @@ import React from 'react';
 import p from './ProfileInfo.module.css';
 import Preloader from "../../common/preloader/Preloader";
 import ProfileStatus from "./ProfileStatus";
+import AvatarDefolt from '../../../assets/image/avatardefolt.png'
+
+
 
 
 const ProfileInfo = (props) => {
@@ -10,10 +13,12 @@ const ProfileInfo = (props) => {
   return (
     <div className={p.ProfileInfo}>
       <div className={p.avatar}>
-       <img src={props.profile.photos.small}/>
+
+          <img src={!props.profile.photos.small ? AvatarDefolt : Preloader} />
+
       </div>
         <div className={p.name}> {props.profile.fullName} </div>
-         <ProfileStatus {...props}/>
+         <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
     </div>
   )
 }

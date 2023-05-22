@@ -6,10 +6,17 @@ const Post = (props) => {
     <div>
       <div className={post.item}>
         <img src='https://png.pngtree.com/element_our/png_detail/20181206/avatar-vector-icon-png_262265.jpg' />
-        {props.message}
+        <div>
+          {props.message}
+        </div>
         <div>
           <span>Like {props.like}</span>
         </div>
+        <div>
+          <button>+</button>
+          <button>-</button>
+        </div>
+
       </div>
     </div>
   )

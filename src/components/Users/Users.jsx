@@ -3,6 +3,7 @@ import usersPhoto from "./../../assets/image/defaultUsersPhoto.png"
 import s from "./Users.module.css"
 import {NavLink} from "react-router-dom";
 
+
 let Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize)
@@ -12,7 +13,6 @@ let Users = (props) => {
     }
 
     return <div className={s.wrapper}>
-        <div className={s.title}>Users</div>
 
         <div className={s.pagesCount}>
             {pages.map(p => {

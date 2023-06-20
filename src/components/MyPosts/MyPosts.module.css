@@ -1,10 +1,38 @@
-.myPost{
-    padding: 10px;
-    margin: 100px 0 0 0;
+.myPost {
+  padding: 10px;
+  margin: 100px 0 0 0;
+  width: 100%;
+}
 
+.formWrapper {
+  position: relative;
+}
+
+.formWrapper button {
+  position: fixed;
+  margin-top: 10px;
+  bottom: 0;
 }
 
 .myPost button {
-    margin-left: 5px;
-    width: auto;
+  box-sizing: border-box;
+  background-color: #0066ff;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 4%;
+  padding: 5px 55px;
+  border: none;
+  border-radius: 8px;
+}
+.myPost button:hover {
+  background-color: #004dbf;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.myPost button:active {
+  background-color: #003380;
 }

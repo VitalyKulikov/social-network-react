@@ -1,6 +1,10 @@
 .selectorPage {
-    font-weight: bold;
+  font-weight: bold;
 }
-.pagesCount span{
-margin: 5px;
+.pagesCount span {
+  margin: 5px;
+}
+
+.wrapper {
+  margin-top: 10px;
 }

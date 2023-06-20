@@ -1,10 +1,13 @@
 .dialogs{   
     display: grid;
     grid-template-columns: 2fr 10fr;
+    font-family: inherit;
+    margin-top: 10px;
     
 }
 
 .dialogsItems { 
+    height: 100vh;
     padding: 10px;
     /* border: 1px solid lightgrey; */
     box-shadow: 0 0 2px 0 #9d9d9d;
@@ -14,17 +17,63 @@
 .item{
     color: #006b6c;
     text-decoration: none;
+    height: 100%;
 }
 
-/*noinspection CssInvalidPropertyValue*/
 .active{
     color: #c31952;
-    /*noinspection CssInvalidPropertyValue*/
+
     font-size: medium;
     text-shadow: 1px 1px 1px #ffffff;
     text-decoration: none;
 }
 
 .messages{
-    padding: 10px;
+    padding: 20px;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.dialogs textarea{
+    box-sizing: border-box;
+    padding: 3px 7px;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    margin-right: 5px;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    cursor: text;
+}
+
+.dialogs button{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background-color:#0066ff;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 4%;
+    padding: 5px 55px;
+    border: none;
+    border-radius: 8px
+}
+
+.dialogs button:hover{
+    background-color:#004dbf;
+    transition: 0.7s;
+    cursor: pointer;
+    
+}
+
+.dialogs button:active{
+    background-color:#003380;
 }

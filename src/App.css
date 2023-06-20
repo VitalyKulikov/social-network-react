@@ -1,17 +1,38 @@
-.app-wrapper{
-margin: auto;
-width: auto;
-display: grid;
-
-grid-template-areas:
-"header header"
-"nav content";
-grid-template-rows: 60px 1fr;
-grid-template-columns: 2fr 10fr;
-/* grid-gap: 10px; */
+@font-face {
+  font-family: SF Pro Display;
+  src: ('./components/common/fonts');
 }
 
-.avatar{
+/* .app{
+  position: relative;
+} */
+
+.app-wrapper {
+  margin: 0;
+  width: auto;
+  display: grid;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  grid-template-areas:
+    "header header"
+    "nav content";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+}
+
+.app-wrapper{
+  position: relative;
+}
+
+.app Header{
+  position: absolute;
+  top: 0px;
+  background-color:aquamarine;
+}
+
+.avatar {
   width: 100px;
 }
 
@@ -19,6 +40,6 @@ grid-template-columns: 2fr 10fr;
   grid-area: content;
   background-color: #ffffff;
 }
-.app-wrapper header{
+.app-wrapper header {
   grid-template-rows: 1fr;
 }

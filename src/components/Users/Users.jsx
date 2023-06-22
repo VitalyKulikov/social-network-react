@@ -15,7 +15,7 @@ let Users = (props) => {
       <div className={s.pagesCount}>
         {pages.map((p) => {
           return (
-            <span 
+            <span
               className={props.currentPage === p && s.selectorPage}
               onClick={() => {
                 props.onPageChenged(p);

@@ -2,7 +2,7 @@ import React from "react";
 import dialogs from "./Dialogs.module.css";
 import DialogItem from "./DialogsItem/DialogItem.jsx";
 import Message from "./Message/Message.jsx";
-import { Field, reduxForm} from "redux-form";
+import { Field, reduxForm } from "redux-form";
 //import {Navigate} from "react-router-dom";
 
 const Dialogs = (props) => {
@@ -32,6 +32,8 @@ const Dialogs = (props) => {
     </div>
   );
 };
+
+let b = "15";
 
 const AddMessageForm = (props) => {
   return (

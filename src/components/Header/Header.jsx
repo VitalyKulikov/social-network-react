@@ -6,7 +6,9 @@ const Header = (props) => {
   return (
     <div className={h.header}>
       <div className={h.headerLogo}>
-        <h2>Social Network</h2>
+        <div>
+          <h2>Clicq</h2>
+        </div>
       </div>
       <div className={h.loginBlock}>
         {props.isAuth ? (

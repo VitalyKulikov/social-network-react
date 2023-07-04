@@ -1,16 +1,16 @@
-import React from "react";
-import my_post from "./MyPosts.module.css";
-import Post from "./Post/Post.jsx";
-import { Field, reduxForm } from "redux-form";
+import React from 'react';
+import my_post from './MyPosts.module.css';
+import Post from './Post/Post.jsx';
+import { Field, reduxForm } from 'redux-form';
 import {
   maxLenghtCreator,
   required,
-} from "../../helpers/validators/validators";
-import { Textarea } from "../common/FormsControls/FormsControls";
+} from '../../helpers/validators/validators';
+import { Textarea } from '../common/FormsControls/FormsControls';
 
 const MyPosts = (props) => {
   let postElements = props.post.map((post) => (
-    <Post message={post.message} like={post.like} key={props.id}/>
+    <Post message={post.message} like={post.like} key={props.id} />
   ));
 
   let onAddPost = (values) => {
@@ -45,8 +45,8 @@ const AddNewPostForm = (props) => {
   );
 };
 
-const AddPostFormRedux = reduxForm({ form: "ProfileAddPostForm" })(
-  AddNewPostForm
+const AddPostFormRedux = reduxForm({ form: 'ProfileAddPostForm' })(
+  AddNewPostForm,
 );
 
 export default MyPosts;

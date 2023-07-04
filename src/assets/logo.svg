@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg145297" viewBox="0 0 1024 768" height="768px" width="1024px" version="1.1">
+  <metadata id="metadata145303"></metadata>
+  <defs id="defs145301"></defs>
+  <linearGradient spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient2-logo-b96daabb-fc89-4389-a62c-a4b18758a28b">
+    <stop id="stop145278" stop-opacity="1" stop-color="#ffffff" offset="0%"></stop>
+    <stop id="stop145280" stop-opacity="1" stop-color="#000000" offset="100%"></stop>
+  </linearGradient>
+  <linearGradient gradientTransform="rotate(-30)" spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient3-logo-b96daabb-fc89-4389-a62c-a4b18758a28b">
+    <stop id="stop145283" stop-opacity="1" stop-color="#ffffff" offset="0%"></stop>
+    <stop id="stop145285" stop-opacity="1" stop-color="#cccccc" offset="50%"></stop>
+    <stop id="stop145287" stop-opacity="1" stop-color="#000000" offset="100%"></stop>
+  </linearGradient>
+  <g id="logo-group">
+    <image xlink:href="" id="container" x="272" y="144" width="480" height="480" style="display: none;" transform="translate(0 0)"></image>
+    <g id="logo-center" transform="translate(180.9598049999999 0)">
+      <image xlink:href="" id="icon_container" style="display: none;" x="0" y="0"></image>
+      <g id="slogan" style="font-style:normal;font-weight:700;font-size:32px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)"></g>
+      <g id="title" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" transform="translate(0 0)">
+        <path id="path145306" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 476.49612,3.024 c 9.50401,0 18.36001,-4.752 23.688,-12.6 l -9.36,-6.336 c -3.23999,4.752 -8.568,7.632 -14.328,7.632 -4.608,0 -9,-1.8 -12.24,-5.04 -3.312,-3.312 -5.112,-7.632 -5.112,-12.312 0,-4.608 1.8,-8.928 5.112,-12.24 3.24,-3.24 7.632,-5.04 12.24,-5.04 5.76,0 11.16,2.88 14.4,7.704 l 9.36,-6.336 c -5.32799,-7.92 -14.18399,-12.672 -23.76,-12.672 -3.888,0 -7.632,0.72 -11.16,2.232 -3.38399,1.44 -6.47999,3.528 -9.072,6.12 -2.664,2.664 -4.68,5.688 -6.12,9.144 -1.512,3.528 -2.304,7.272 -2.304,11.088 0,3.888 0.792,7.632 2.304,11.16 1.44,3.384 3.456,6.48 6.12,9.072 2.59201,2.664 5.68801,4.752 9.072,6.192 3.528,1.44 7.272,2.232 11.16,2.232 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#58717a" stroke="#58717a" transform="translate(0 336.592) translate(50 -57.135999999999996) scale(3) translate(-447.84012 54.216)"></path>
+        <path id="path145308" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 501.884,2.52 h 10.872 v -58.032 l -10.872,3.6 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#77929a" stroke="#77929a" transform="translate(0 336.592) translate(272.13164 -61.024) scale(3) translate(-501.884 55.512)"></path>
+        <path id="path145310" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 519.46213,2.52 h 10.87199 v -41.544 l -10.87199,3.6 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#96b2b9" stroke="#96b2b9" transform="translate(0 336.592) translate(384.8660300000001 -11.560000000000002) scale(3) translate(-519.46213 39.024)"></path>
+        <path id="path145312" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 534.16025,-17.424 c 0,2.736 0.576,5.4 1.584,7.992 1.08,2.448 2.52,4.608 4.392,6.48 1.944,1.872 4.104,3.384 6.552,4.392 2.52,1.08 5.256,1.656 7.992,1.656 2.736,0 5.472,-0.576 7.992,-1.656 0.576,-0.216 1.152,-0.504 1.728,-0.792 v 16.128 l 10.8,-3.6 v -30.6 c 0,-2.808 -0.504,-5.472 -1.584,-7.992 -1.08,-2.448 -2.52,-4.68 -4.392,-6.552 -1.872,-1.872 -4.104,-3.384 -6.552,-4.392 -2.52,-1.08 -5.184,-1.584 -7.992,-1.584 -2.736,0 -5.472,0.504 -7.992,1.584 -2.448,1.008 -4.608,2.52 -6.552,4.392 -1.872,1.872 -3.312,4.104 -4.392,6.552 -1.008,2.52 -1.584,5.184 -1.584,7.992 z m 10.8,0 c 0,-5.4 4.392,-9.72 9.72,-9.72 5.328,0 9.72,4.32 9.72,9.72 0,5.328 -4.392,9.72 -9.72,9.72 -5.328,0 -9.72,-4.392 -9.72,-9.72 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#b5d3d9" stroke="#b5d3d9" transform="translate(0 336.592) translate(488.9603900000002 -8.320000000000007) scale(3) translate(-534.16025 37.944)"></path>
+      </g>
+      <image xlink:href="" id="icon" style="display: none;" x="0" y="0"></image>
+    </g>
+  </g>
+</svg>

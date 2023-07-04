@@ -1,14 +1,14 @@
-import React from "react";
-import Profile from "./Profile.jsx";
-import { connect } from "react-redux";
+import React from 'react';
+import Profile from './Profile.jsx';
+import { connect } from 'react-redux';
 import {
   getStatus,
   getUsersProfile,
   updateStatus,
-} from "../../redux/profile-page-reducer";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { withAuthRedirect } from "../../HOC/withAuthRedirect";
-import { compose } from "redux";
+} from '../../redux/profile-page-reducer';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { withAuthRedirect } from '../../HOC/withAuthRedirect';
+import { compose } from 'redux';
 
 class ProfileContainer extends React.Component {
   componentDidMount() {
@@ -22,7 +22,7 @@ class ProfileContainer extends React.Component {
   render() {
     return (
       <div>
-        {" "}
+        {' '}
         <Profile
           {...this.props}
           profile={this.props.profile}
@@ -53,7 +53,7 @@ function withRouter(Component) {
 export default compose(
   connect(mapStateToProps, { getUsersProfile, getStatus, updateStatus }),
   withRouter,
-  withAuthRedirect
+  withAuthRedirect,
 )(ProfileContainer);
 
 //connect(mapStateToProps, {getUsersProfile, getStatus, updateStatus})(withRouter(AuthRedirectComponent));

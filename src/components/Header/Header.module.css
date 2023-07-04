@@ -4,6 +4,7 @@
   grid-template-rows: 30px;
   grid-template-columns:1fr 1fr;
   background-color: dimgray;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -55,11 +56,4 @@
 }
 
 
-.headerLogo h2 {
-  margin: auto;
-  color: #ffffff;
-  font-family: inherit;
-  font-size: 38px;
-  
-}
 

@@ -11,7 +11,10 @@ const ProfileInfo = (props) => {
   return (
     <div className={p.ProfileInfo}>
       <div className={p.avatar}>
-        <img alt='' src={!props.profile.photos.small ? AvatarDefolt : Preloader} />
+        <img
+          alt=""
+          src={!props.profile.photos.small ? AvatarDefolt : Preloader}
+        />
       </div>
       <div className={p.name}> {props.profile.fullName} </div>
       <ProfileStatus status={props.status} updateStatus={props.updateStatus} />

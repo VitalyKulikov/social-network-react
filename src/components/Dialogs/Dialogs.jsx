@@ -33,12 +33,10 @@ const Dialogs = (props) => {
   );
 };
 
-let b = "15";
-
 const AddMessageForm = (props) => {
   return (
     <form onSubmit={props.handleSubmit}>
-      <div>
+      <div className="">
         <Field
           component="textarea"
           name="newMessageText"

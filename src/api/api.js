@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
 const instance = axios.create({
   withCredentials: true,
-  baseURL: "https://social-network.samuraijs.com/api/1.0/",
-  headers: { "API-KEY": "09d72581-43df-4af7-ba8b-857414772232" },
+  baseURL: 'https://social-network.samuraijs.com/api/1.0/',
+  headers: { 'API-KEY': '09d72581-43df-4af7-ba8b-857414772232' },
 });
 export const userAPI = {
   getUsers(currentPage, pageSize) {
@@ -27,7 +27,7 @@ export const profileAPI = {
     return instance.get(`profile/status/${userId}`);
   },
   updateStatus(status) {
-    return instance.put("profile/status", { status: status });
+    return instance.put('profile/status', { status: status });
   },
 };
 

@@ -5,9 +5,7 @@ import Header from './Header.jsx';
 
 class HeaderContainer extends React.Component {
   render() {
-    return (
-      <Header {...this.props} />
-    ); /*login={this.props.login} isAuth={this.props.isAuth}*/
+    return <Header {...this.props} />;
   }
 }
 

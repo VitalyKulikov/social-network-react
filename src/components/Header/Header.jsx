@@ -1,6 +1,6 @@
-import React from "react";
-import h from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import h from './Header.module.css';
+import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
   return (
@@ -19,7 +19,7 @@ const Header = (props) => {
             </div>
           </div>
         ) : (
-          <NavLink to={"/login"}>login</NavLink>
+          <NavLink to={'/login'}>login</NavLink>
         )}
       </div>
     </div>

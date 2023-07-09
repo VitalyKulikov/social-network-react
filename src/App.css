@@ -1,3 +1,5 @@
+/* @import './reset.css'; */
+
 @font-face {
   font-family: SF Pro Display;
   src: ('./components/common/fonts');
@@ -15,21 +17,21 @@
   font-size: 16px;
   font-weight: normal;
   grid-template-areas:
-    "header header"
-    "nav content";
+    'header header'
+    'nav content';
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px; */
 }
 
-.app-wrapper{
+.app-wrapper {
   position: relative;
 }
 
-.app Header{
+.app Header {
   position: absolute;
   top: 0px;
-  background-color:aquamarine;
+  background-color: aquamarine;
 }
 
 .avatar {

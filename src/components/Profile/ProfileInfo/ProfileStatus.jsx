@@ -1,5 +1,6 @@
-import React from "react";
-import pss from "./ProfileStatus.module.css";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import pss from './ProfileStatus.module.css';
 class ProfileStatus extends React.Component {
   state = { editMode: false, status: this.props.status };
 
@@ -22,7 +23,7 @@ class ProfileStatus extends React.Component {
     });
   };
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
+  componentDidUpdate(prevProps) {
     if (prevProps.status !== this.props.status) {
       this.setState({ status: this.props.status });
     }
@@ -34,8 +35,8 @@ class ProfileStatus extends React.Component {
         {!this.state.editMode && (
           <div className={pss.status}>
             <span onDoubleClick={this.activateEditMode}>
-              {" "}
-              {this.props.status || "У вас еще нет статуса"}{" "}
+              {' '}
+              {this.props.status || 'У вас еще нет статуса'}{' '}
             </span>
           </div>
         )}

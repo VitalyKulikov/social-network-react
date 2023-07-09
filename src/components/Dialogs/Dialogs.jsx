@@ -1,8 +1,8 @@
-import React from "react";
-import dialogs from "./Dialogs.module.css";
-import DialogItem from "./DialogsItem/DialogItem.jsx";
-import Message from "./Message/Message.jsx";
-import { Field, reduxForm } from "redux-form";
+import React from 'react';
+import dialogs from './Dialogs.module.css';
+import DialogItem from './DialogsItem/DialogItem.jsx';
+import Message from './Message/Message.jsx';
+import { Field, reduxForm } from 'redux-form';
 //import {Navigate} from "react-router-dom";
 
 const Dialogs = (props) => {
@@ -50,8 +50,8 @@ const AddMessageForm = (props) => {
   );
 };
 
-const AddMessageFormRedux = reduxForm({ form: "dialogAddMessageForm" })(
-  AddMessageForm
+const AddMessageFormRedux = reduxForm({ form: 'dialogAddMessageForm' })(
+  AddMessageForm,
 );
 
 export default Dialogs;

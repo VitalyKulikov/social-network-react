@@ -1,8 +1,8 @@
-import React from "react";
-import p from "./ProfileInfo.module.css";
-import Preloader from "../../common/preloader/Preloader";
-import ProfileStatus from "./ProfileStatus.jsx";
-import AvatarDefolt from "../../../assets/image/avatardefolt.png";
+import React from 'react';
+import p from './ProfileInfo.module.css';
+import Preloader from '../../common/preloader/Preloader';
+import ProfileStatus from './ProfileStatus.jsx';
+import AvatarDefolt from '../../../assets/image/avatardefolt.png';
 
 const ProfileInfo = (props) => {
   if (!props.profile) {

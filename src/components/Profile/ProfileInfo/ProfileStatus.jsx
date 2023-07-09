@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import pss from './ProfileStatus.module.css';
+
 class ProfileStatus extends React.Component {
   state = { editMode: false, status: this.props.status };
 

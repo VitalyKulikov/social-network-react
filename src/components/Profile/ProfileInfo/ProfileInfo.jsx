@@ -1,8 +1,9 @@
 import React from 'react';
 import p from './ProfileInfo.module.css';
 import Preloader from '../../common/preloader/Preloader';
-import ProfileStatus from './ProfileStatus.jsx';
+// import ProfileStatus from './ProfileStatus.jsx';
 import AvatarDefolt from '../../../assets/image/avatardefolt.png';
+import ProfileStatusWithHooks from './ProfileStatusWithHooks';
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -17,7 +18,10 @@ const ProfileInfo = (props) => {
         />
       </div>
       <div className={p.name}> {props.profile.fullName} </div>
-      <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+      <ProfileStatusWithHooks
+        status={props.status}
+        updateStatus={props.updateStatus}
+      />
     </div>
   );
 };

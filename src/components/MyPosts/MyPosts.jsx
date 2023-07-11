@@ -8,25 +8,32 @@ import {
 } from '../../helpers/validators/validators';
 import { Textarea } from '../common/FormsControls/FormsControls';
 
-const MyPosts = (props) => {
-  let postElements = props.post.map((post) => (
-    <Post message={post.message} like={post.like} key={props.id} />
-  ));
+class MyPosts extends React.PureComponent {
 
-  let onAddPost = (values) => {
-    props.addPost(values.newPostText);
-  };
+    // shouldComponentUpdate(nextProps, nextState, nextContext) {
+    //     nextProps !== this.props || nextState !== this.setState
+    // }
 
-  return (
-    <div className={my_post.myPost}>
-      <h3>My post</h3>
-      <div>
-        <AddPostFormRedux onSubmit={onAddPost} />
-      </div>
-      <div className={my_post.post}>{postElements}</div>
-    </div>
-  );
-};
+    render() {
+        let postElements = this.props.post.map((post) => (
+            <Post message={post.message} like={post.like} key={this.props.id}/>
+        ));
+
+        let onAddPost = (values) => {
+            this.props.addPost(values.newPostText);
+        };
+
+        return (
+            <div className={my_post.myPost}>
+                <h3>My post</h3>
+                <div>
+                    <AddPostFormRedux onSubmit={onAddPost}/>
+                </div>
+                <div className={my_post.post}>{postElements}</div>
+            </div>
+        );
+    }
+}
 
 const AddNewPostForm = (props) => {
   return (

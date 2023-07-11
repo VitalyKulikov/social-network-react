@@ -8,11 +8,11 @@ import {
 } from '../../helpers/validators/validators';
 import { Textarea } from '../common/FormsControls/FormsControls';
 
-class MyPosts extends React.PureComponent {
+class MyPosts extends React.Component {
 
-    // shouldComponentUpdate(nextProps, nextState, nextContext) {
-    //     nextProps !== this.props || nextState !== this.setState
-    // }
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextProps !== this.props || nextState !== this.state
+    }
 
     render() {
         let postElements = this.props.post.map((post) => (

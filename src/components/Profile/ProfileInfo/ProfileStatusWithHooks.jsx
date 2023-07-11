@@ -25,7 +25,7 @@ const ProfileStatusWithHooks = (props) => {
 
   return (
     <div className={pss.wrapper}>
-      {true && (
+      {!editMode && (
         <div className={pss.status}>
           <span onDoubleClick={activateEditMode}>
             {' '}

@@ -5,7 +5,7 @@ import {
   getStatus,
   getUsersProfile,
   updateStatus,
-} from '../../redux/profile-page-reducer';
+} from '../../redux/profile-reducer';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { withAuthRedirect } from '../../HOC/withAuthRedirect';
 import { compose } from 'redux';

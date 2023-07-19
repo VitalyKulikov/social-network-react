@@ -15,7 +15,7 @@ let initialState = {
   messagesData: [{ id: '1', message: 'Hello' }],
 };
 
-const messagesPageReducer = (state = initialState, action) => {
+const messagesReducer = (state = initialState, action) => {
   switch (action.type) {
     case SEND_MESSAGE:
       return {
@@ -35,4 +35,4 @@ export const sendMessageCreator = (newMessageText) => ({
   newMessageText,
 });
 
-export default messagesPageReducer;
+export default messagesReducer;

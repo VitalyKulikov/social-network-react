@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { sendMessageCreator } from '../../redux/messages-page-reducer';
+import { sendMessageCreator } from '../../redux/messages-reducer';
 import Dialogs from './Dialogs.jsx';
 import { connect } from 'react-redux';
 import { withAuthRedirect } from './../../HOC/withAuthRedirect';

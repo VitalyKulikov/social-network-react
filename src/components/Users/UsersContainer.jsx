@@ -1,15 +1,15 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import {
   follow,
   unfollow,
   setCurrentPage,
   toggleFollowingProgress,
-  requetUser,
-} from '../../redux/users-page-reducer';
+  requestUsers,
+} from '../../redux/users-reducer';
 import Users from './Users';
 import Preloader from '../common/preloader/Preloader';
-import { compose } from 'redux';
+import {compose} from 'redux';
 import {
   getCurrentPage,
   getFollowingInProgress,
@@ -21,18 +21,19 @@ import {
 
 class UsersComponent extends React.Component {
   componentDidMount() {
-    this.props.requetUser(this.props.currentPage, this.props.pageSize);
+    const {currentPage, pageSize} = this.props
+    this.props.requestUsers(currentPage, pageSize);
   }
 
   onPageChenged = (pageNumber) => {
-    this.props.setCurrentPage(pageNumber);
-    this.props.requetUser(pageNumber, this.props.pageSize);
+    const {pageSize} = this.props
+    this.props.requestUsers(pageNumber, pageSize);
   };
 
   render() {
     return (
       <>
-        {this.props.isFetching ? <Preloader /> : null}
+        {this.props.isFetching ? <Preloader/> : null}
         <Users
           totalCount={this.props.totalCount}
           pageSize={this.props.pageSize}
@@ -65,6 +66,6 @@ export default compose(
     unfollow,
     setCurrentPage,
     toggleFollowingProgress,
-    requetUser,
+    requestUsers,
   }),
 )(UsersComponent);

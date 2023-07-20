@@ -17,6 +17,7 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
     "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
     "redux-form": "^8.3.10",
     "redux-thunk": "^2.4.2",
     "reselect": "^4.1.8",
@@ -25,7 +26,7 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-app-rewired test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
+    "test": "test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js}\" --fix"
